@@ -1,0 +1,141 @@
+.head-top {
+    padding: 0px 0 15px 0px;
+}
+
+
+/*Início das configurações da header*/
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: transparent;
+}
+
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    padding: 0px 17px;
+    background: #251b38;
+    color: #fff;
+}
+
+
+/*Início das configurações da Navigation*/
+
+.menu {
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.menu ul a {
+    color: #222;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px 12px;
+    font-size: 12px;
+}
+
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.right-nav {
+    width: 50%;
+    float: left;
+    display: block;
+    text-align: right;
+}
+
+.right-nav .comn {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.log-in {
+    padding: 0px 10px !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.3s;
+        -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked~ul {
+        max-height: 350px;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
+
+.searchinput {
+    display: none;
+    border: 0px;
+}
+
+.searchinput.active {
+    display: block;
+    border-bottom: 2px solid #ffde80;
+    outline: 0;
+    height: 30px;
+    margin: 6px;
+}
+
+.search {
+    display: inline-flex;
+    width: 100%;
+}

@@ -1,0 +1,34 @@
+<header>
+    <figure class="brand"><i class="fa fa-bars" aria-hidden="true"></i></figure>
+    <nav class="menu">
+        <ul>
+            <a routerLink="" routerLinkActive="active">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Shop</li>
+            </a>
+            <a href="#">
+                <li>Magazines</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="right-nav">
+        <div class="search-nav comn">
+            <div class="search">
+                <span (click)="addclass($event)">
+                    <i class="fa fa-search"></i>
+                </span>
+                <input type="text" class="searchinput" [class.active]="addCls" aria-label="search" placeholder="enter your search">
+            </div>
+        </div>
+        <div class="shop-bas comn">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+        <div class="log-in comn">
+            <a href="">
+                <li>login</li>
+            </a>
+        </div>
+    </div>
+</header>

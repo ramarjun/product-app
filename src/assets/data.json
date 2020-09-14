@@ -1,0 +1,93 @@
+{
+    "products": [{
+            "id": "001",
+            "name": "Coombes",
+            "price": 22999,
+            "rating": 4,
+            "category": "lounge",
+            "colors": ["grey", "#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/312/312/k5ihzm80/bed/9/n/n/queen-na-particle-board-rome-exotic-teak-bharat-lifestyle-exotic-original-imafhz5yaapzwup4.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        },
+        {
+            "id": "002",
+            "name": "Keeve Set",
+            "price": 15999,
+            "rating": 3,
+            "category": "Tabel & Chair",
+            "colors": ["grey", "#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/416/416/kao98cw0/bed/h/h/f/single-na-particle-board-dw1do-okra-dark-oak-original-imafs74y3rxhhzv8.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        },
+        {
+            "id": "003",
+            "name": "Nille",
+            "price": 11999,
+            "rating": 0,
+            "category": "Armchair",
+            "colors": ["#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/612/612/jlfh6kw0/coffee-table/h/g/3/rosewood-sheesham-ctrs005sw5md1-flipkart-perfect-homes-mahogany-original-imaf8kfwggj4xxd4.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        },
+        {
+            "id": "004",
+            "name": "Momo",
+            "price": 24000,
+            "rating": 1,
+            "category": "chairs",
+            "colors": ["#bd2130", "#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/612/612/jt641ow0/coffee-table/g/3/g/mango-wood-ctsd205sw5wld1-flipkart-perfect-homes-walnut-original-imafehy9fjchftgq.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        },
+        {
+            "id": "005",
+            "name": "Penemile",
+            "price": 41000,
+            "rating": 2,
+            "category": "selves",
+            "colors": ["#fcfcfc", "#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/612/612/jka1evk0/dining-set/b/j/c/6-seater-white-rosewood-sheesham-ds6d4wbho055l-flipkart-perfect-original-imaf7nxah8zfabaf.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        },
+        {
+            "id": "006",
+            "name": "Kappu",
+            "price": 15400,
+            "rating": 4,
+            "category": "armchair",
+            "colors": ["grey", "#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/612/612/jh80ia80/sofa-set/6/n/h/red-na-butterfly-3-1-1-bharat-lifestyle-black-original-imaf5affcczvxg6a.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        }, {
+            "id": "007",
+            "name": "Coombes",
+            "price": 22999,
+            "rating": 5,
+            "category": "selves",
+            "colors": ["#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/612/612/jxkpx8w0/collapsible-wardrobe/e/v/h/pp-polypropylene-1602-flipkart-smartbuy-warm-flowers-original-imafgyextqafqznw.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        },
+        {
+            "id": "008",
+            "name": "Keeve Set",
+            "price": 15999,
+            "rating": 1,
+            "category": "armchair",
+            "colors": ["grey", "#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/612/612/jmz7csw0/kitchen-cabinet/u/z/z/rosewood-sheesham-kc1ho05nd3p-flipkart-perfect-homes-honey-original-imaf9rud34hqtgeu.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        },
+        {
+            "id": "009",
+            "name": "Nille",
+            "price": 11999,
+            "rating": 2,
+            "category": "Tabel & Chair",
+            "colors": ["#d2aeae", "#5b5050"],
+            "image": "https://rukminim1.flixcart.com/image/612/612/jrs3mvk0/coffee-table/f/d/4/rosewood-sheesham-inlct24-induscraft-honey-brown-original-imafdhux27kzh49g.jpeg?q=70",
+            "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        }
+    ],
+    "responseCode": 200
+}

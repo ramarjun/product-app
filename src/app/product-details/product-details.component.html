@@ -1,0 +1,32 @@
+<div class="prod-details" *ngIf="dataAvail">
+    <div class="img-sec">
+        <img src="{{product.image}}" class="img-responsive" />
+    </div>
+    <div class="prod-cont">
+        <span class="cat">{{product.category}}</span>
+        <h4 class="name">{{product.name}}</h4>
+        <p>
+            {{product.description}}
+        </p>
+        <div class="color-rd">
+            <span class="cat">
+                Color
+            </span>
+            <ul>
+                <li class="color-option" [class.active]="i===0" *ngFor="let color of product['colors'] ; let i = index" [style.backgroundColor]="color">
+                    {{color}}
+                </li>
+            </ul>
+        </div>
+        <span class="cat">
+            Price per unit
+        </span>
+        <div class="price-rd">
+            <span class="prii">
+                $ {{product.price}}
+            </span>
+            <button class='btn'>Buy Now</button>
+            <span class="add-ico"><i class="fa fa-cart-plus"></i> </span>
+        </div>
+    </div>
+</div>

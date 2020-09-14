@@ -11,7 +11,7 @@ import { ProductsComponent } from './products/products.component';
 
 import { MyMainService } from './main-services';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-
+import { LoadingComponent } from './loading';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HeaderComponent,
     ProductsComponent,
     ProductDetailsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,8 @@ import { Config } from '../types/Config';
 export class ProductsComponent implements OnInit {
   public dataAvail: any;
   public config: any;
+  public isLoading: boolean = false;
+  isDataAvailable: boolean = false;
   options: Config = { multi: false };
   
   menus: Menu[] = [
@@ -43,20 +45,32 @@ export class ProductsComponent implements OnInit {
   constructor(public _sf: MyMainService, public router: Router) { }
 
   ngOnInit() {
+    
     this.getDataofproduct();
     this.config = this.mergeConfig(this.options);
   }
 
   getDataofproduct() {
+    this.isLoading = true;
+
     this._sf.getProducts().subscribe((data) => {
-      this.dataAvail = data['products'];
-      const arVal = [];
-      for (let i = 0; i < this.dataAvail.length; i++) {
-        this.dataAvail[i].range = [];
-        for (let j = 0; j < 5; j++) {
-          this.dataAvail[i]['range'].push(j + 1);
+      console.log(data['responseCode']);
+      if(data['responseCode'] === 200){
+        this.isDataAvailable = true;
+        this.isLoading = false;
+        this.dataAvail = data['products'];
+        const arVal = [];
+        for (let i = 0; i < this.dataAvail.length; i++) {
+          this.dataAvail[i].range = [];
+          for (let j = 0; j < 5; j++) {
+            this.dataAvail[i]['range'].push(j + 1);
+          }
         }
+      }else{
+        this.isDataAvailable = false;
+        this.isLoading = false;
       }
+      
     });
   }
 

@@ -1,3 +1,4 @@
+<loading *ngIf="isLoading && !isDataAvailable">{{ isLoading }}</loading>
 <div class="main0">
     <div class="left-search">
         <h4 class="head-h4">Filter By</h4>
@@ -15,7 +16,7 @@
             </li>
         </ul>
     </div>
-    <div class="main-prods">
+    <div *ngIf="isDataAvailable" class="main-prods">
         <div class="row product-list" style="margin: 1em 0;">
             <div class="col-sm-12 col-md-6 col-lg-4 product-list__item" *ngFor="let product of dataAvail; let i = index;">
                 <div class="card mb-4 shadow-sm pd-5">
@@ -47,5 +48,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="main-prods" *ngIf="!isDataAvailable">
+        <h3 style=" text-align: center; padding: 100px;">Data Not Available</h3>
     </div>
 </div>
